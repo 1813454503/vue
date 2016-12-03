@@ -1,7 +1,7 @@
-vue¶¯»­
-vueÂ·ÓÉ
+ï»¿vueåŠ¨ç”»
+vueè·¯ç”±
 --------------------------------------
-transition Ö®Ç°  ÊôĞÔ
+transition ä¹‹å‰  å±æ€§
 <p transition="fade"></p>
 
 .fade-transition{}
@@ -9,67 +9,67 @@ transition Ö®Ç°  ÊôĞÔ
 .fade-leave{}
 --------------------------------------
 
-µ½2.0ÒÔºó transition ×é¼ş
+åˆ°2.0ä»¥å transition ç»„ä»¶
 
 <transition name="fade">
-	ÔË¶¯¶«Î÷(ÔªËØ£¬ÊôĞÔ¡¢Â·ÓÉ....)
+	è¿åŠ¨ä¸œè¥¿(å…ƒç´ ï¼Œå±æ€§ã€è·¯ç”±....)
 </transition>
 
-class¶¨Òå:
-.fade-enter{}	//³õÊ¼×´Ì¬
-.fade-enter-active{}  //±ä»¯³ÉÊ²Ã´Ñù  ->  µ±ÔªËØ³öÀ´(ÏÔÊ¾)
+classå®šä¹‰:
+.fade-enter{}	//åˆå§‹çŠ¶æ€
+.fade-enter-active{}  //å˜åŒ–æˆä»€ä¹ˆæ ·  ->  å½“å…ƒç´ å‡ºæ¥(æ˜¾ç¤º)
 
 .fade-leave{}
-.fade-leave-active{} //±ä³É³ÉÊ²Ã´Ñù   -> µ±ÔªËØÀë¿ª(ÏûÊ§)
+.fade-leave-active{} //å˜æˆæˆä»€ä¹ˆæ ·   -> å½“å…ƒç´ ç¦»å¼€(æ¶ˆå¤±)
 
-ÈçºÎanimate.cssÅäºÏÓÃ£¿
+å¦‚ä½•animate.cssé…åˆç”¨ï¼Ÿ
 	<transition enter-active-class="animated zoomInLeft" leave-active-class="animated zoomOutRight">
             	<p v-show="show"></p>
         	</transition>
 
-¶à¸öÔªËØÔË¶¯:
+å¤šä¸ªå…ƒç´ è¿åŠ¨:
 	<transition-group enter-active-class="" leave-active-class="">
 		<p :key=""></p>
 		<p :key=""></p>
 	</transition-group>
 ------------------------------------------
-vue2.0 Â·ÓÉ:
+vue2.0 è·¯ç”±:
 	http://router.vuejs.org/zh-cn/index.html
-»ù±¾Ê¹ÓÃ:
-1.  ²¼¾Ö
-	<router-link to="/home">Ö÷Ò³</router-link>
+åŸºæœ¬ä½¿ç”¨:
+1.  å¸ƒå±€
+	<router-link to="/home">ä¸»é¡µ</router-link>
 
 	<router-view></router-view>
-2. Â·ÓÉ¾ßÌåĞ´·¨
-	//×é¼ş
+2. è·¯ç”±å…·ä½“å†™æ³•
+	//ç»„ä»¶
 	var Home={
-	    template:'<h3>ÎÒÊÇÖ÷Ò³</h3>'
+	    template:'<h3>æˆ‘æ˜¯ä¸»é¡µ</h3>'
 	};
 	var News={
-	    template:'<h3>ÎÒÊÇĞÂÎÅ</h3>'
+	    template:'<h3>æˆ‘æ˜¯æ–°é—»</h3>'
 	};
 
-	//ÅäÖÃÂ·ÓÉ
+	//é…ç½®è·¯ç”±
 	const routes=[
 	    {path:'/home', componet:Home},
 	    {path:'/news', componet:News},
 	];
 
-	//Éú³ÉÂ·ÓÉÊµÀı
+	//ç”Ÿæˆè·¯ç”±å®ä¾‹
 	const router=new VueRouter({
 	    routes
 	});
 
-	//×îºó¹Òµ½vueÉÏ
+	//æœ€åæŒ‚åˆ°vueä¸Š
 	new Vue({
 	    router,
 	    el:'#box'
 	});
-3. ÖØ¶¨Ïò
-	Ö®Ç°  router.rediect  ·ÏÆúÁË
+3. é‡å®šå‘
+	ä¹‹å‰  router.rediect  åºŸå¼ƒäº†
 	{path:'*', redirect:'/home'}
 ------------------------------------------
-Â·ÓÉÇ¶Ì×:
+è·¯ç”±åµŒå¥—:
 	/user/username
 
 	const routes=[
@@ -77,7 +77,7 @@ vue2.0 Â·ÓÉ:
 	    {
 	        path:'/user',
 	        component:User,
-	        children:[  //ºËĞÄ
+	        children:[  //æ ¸å¿ƒ
 	            {path:'username', component:UserDetail}
 	        ]
 	    },
@@ -90,15 +90,15 @@ vue2.0 Â·ÓÉ:
 :username
 :age
 ------------------------------------------
-Â·ÓÉÊµÀı·½·¨:
-	router.push({path:'home'});  //Ö±½ÓÌí¼ÓÒ»¸öÂ·ÓÉ,±íÏÖÇĞ»»Â·ÓÉ£¬±¾ÖÊÍùÀúÊ·¼ÇÂ¼ÀïÃæÌí¼ÓÒ»¸ö
-	router.replace({path:'news'}) //Ìæ»»Â·ÓÉ£¬²»»áÍùÀúÊ·¼ÇÂ¼ÀïÃæÌí¼Ó
+è·¯ç”±å®ä¾‹æ–¹æ³•:
+	router.push({path:'home'});  //ç›´æ¥æ·»åŠ ä¸€ä¸ªè·¯ç”±,è¡¨ç°åˆ‡æ¢è·¯ç”±ï¼Œæœ¬è´¨å¾€å†å²è®°å½•é‡Œé¢æ·»åŠ ä¸€ä¸ª
+	router.replace({path:'news'}) //æ›¿æ¢è·¯ç”±ï¼Œä¸ä¼šå¾€å†å²è®°å½•é‡Œé¢æ·»åŠ 
 ------------------------------------------
 vue-cli
 ------------------------------------------
 npm install
 ------------------------------------------
-½ÅÊÖ¼Ü:  vue-loader
+è„šæ‰‹æ¶:  vue-loader
 	1.0  -> 
 	new Vue({
 	  el: '#app',
@@ -111,14 +111,14 @@ npm install
 	})
 ------------------------------------------
 vue2.0 
-	vue-loaderºÍvue-routerÅäºÏ
+	vue-loaderå’Œvue-routeré…åˆ
 ------------------------------------------
 
 style-loader	css-loader
 
 	style!css
 ------------------------------------------
-ÏîÄ¿:
+é¡¹ç›®:
 ------------------------------------------
 
 

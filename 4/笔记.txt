@@ -1,86 +1,86 @@
-ÊÖ¶¯ÅäÖÃ×Ô¼º:
+ï»¿æ‰‹åŠ¨é…ç½®è‡ªå·±:
 	webpack+vue-loader
 
-	webpack¼ÓÔØÄ£¿é
+	webpackåŠ è½½æ¨¡å—
 -------------------------------------
-ÈçºÎÔËĞĞ´ËÏîÄ¿£¿
-	1. npm install	»òÕß    cnpm install
+å¦‚ä½•è¿è¡Œæ­¤é¡¹ç›®ï¼Ÿ
+	1. npm install	æˆ–è€…    cnpm install
 	2. npm run dev
 		->  package.json
 			"scripts":{
 				"dev":"webpack-dev-server --inline --hot --port 8082"
 			}
 
-ÒÔºóÏÂÔØÄ£¿é£º
+ä»¥åä¸‹è½½æ¨¡å—ï¼š
 	npm install <package-name>  --save-dev
 
-EADDRINUSE	¶Ë¿Ú±»Õ¼ÓÃ
+EADDRINUSE	ç«¯å£è¢«å ç”¨
 
-ÉÙÁË:
+å°‘äº†:
 	webpack-dev-server
 	webpack
 ----------------------------------------
-.vue ½áÎ²£¬Ö®ºó³Æºô×é¼ş
+.vue ç»“å°¾ï¼Œä¹‹åç§°å‘¼ç»„ä»¶
 ----------------------------------------
-Â·ÓÉ:
+è·¯ç”±:
 	vue-router
 
-		->  ÈçºÎ²é¿´°æ±¾:
+		->  å¦‚ä½•æŸ¥çœ‹ç‰ˆæœ¬:
 			bower info vue-router
 
-	Â·ÓÉÊ¹ÓÃ°æ±¾: 0.7.13
-ÅäºÏvue-loaderÊ¹ÓÃ:
-1. ÏÂÔØvue-routerÄ£¿é
+	è·¯ç”±ä½¿ç”¨ç‰ˆæœ¬: 0.7.13
+é…åˆvue-loaderä½¿ç”¨:
+1. ä¸‹è½½vue-routeræ¨¡å—
 	cnpm install vue-router@0.7.13
 2. import VueRouter from 'vue-router'
 
 3. Vue.use(VueRouter);
 
-4. ÅäÖÃÂ·ÓÉ
+4. é…ç½®è·¯ç”±
 	var router=new VueRouter();
 	router.map({
-		Â·ÓÉ¹æÔò
+		è·¯ç”±è§„åˆ™
 	})
-5. ¿ªÆô
+5. å¼€å¯
 	router.start(App,'#app');
 
-×¢Òâ:
-	Ö®Ç°: index.html	->   <app></app>
-	ÏÖÔÚ: index.html	->   <div id="app"></div>
+æ³¨æ„:
+	ä¹‹å‰: index.html	->   <app></app>
+	ç°åœ¨: index.html	->   <div id="app"></div>
 
-	App.vue	->   ĞèÒªÒ»¸ö <div id="app"></div>  ¸ùÔªËØ
+	App.vue	->   éœ€è¦ä¸€ä¸ª <div id="app"></div>  æ ¹å…ƒç´ 
 
 home	news
 ---------------------------------------------
-Â·ÓÉÇ¶Ì×:
-	ºÍÖ®Ç°Ò»Ä£Ò»Ñù
+è·¯ç”±åµŒå¥—:
+	å’Œä¹‹å‰ä¸€æ¨¡ä¸€æ ·
 --------------------------------------------
-ÉÏÏß:
+ä¸Šçº¿:
 	npm run build
 		->	webpack -p
 --------------------------------------------
-½ÅÊÖ¼Ü:
-	vue-cli¡ª¡ªvue½ÅÊÖ¼Ü
-		°ïÄãÌá¹©ºÃ»ù±¾ÏîÄ¿½á¹¹
+è„šæ‰‹æ¶:
+	vue-cliâ€”â€”vueè„šæ‰‹æ¶
+		å¸®ä½ æä¾›å¥½åŸºæœ¬é¡¹ç›®ç»“æ„
 
-±¾Éí¼¯³ÉºÜ¶àÏîÄ¿Ä£°å:
-	simple		¸öÈË¾õµÃÒ»µãÓÃ¶¼Ã»ÓĞ
-	webpack	¿ÉÒÔÊ¹ÓÃ(´óĞÍÏîÄ¿)
-			Eslint ¼ì²é´úÂë¹æ·¶£¬
-			µ¥Ôª²âÊÔ
-	webpack-simple	¸öÈËÍÆ¼öÊ¹ÓÃ, Ã»ÓĞ´úÂë¼ì²é	¡Ì
+æœ¬èº«é›†æˆå¾ˆå¤šé¡¹ç›®æ¨¡æ¿:
+	simple		ä¸ªäººè§‰å¾—ä¸€ç‚¹ç”¨éƒ½æ²¡æœ‰
+	webpack	å¯ä»¥ä½¿ç”¨(å¤§å‹é¡¹ç›®)
+			Eslint æ£€æŸ¥ä»£ç è§„èŒƒï¼Œ
+			å•å…ƒæµ‹è¯•
+	webpack-simple	ä¸ªäººæ¨èä½¿ç”¨, æ²¡æœ‰ä»£ç æ£€æŸ¥	âˆš
 
-	browserify	->  ×Ô¼º¿´
+	browserify	->  è‡ªå·±çœ‹
 	browserify-simple
 	
 --------------------------------------------
-»ù±¾Ê¹ÓÃÁ÷³Ì:
-1. npm install vue-cli -g	°²×° vueÃüÁî»·¾³
-	ÑéÖ¤°²×°ok?
+åŸºæœ¬ä½¿ç”¨æµç¨‹:
+1. npm install vue-cli -g	å®‰è£… vueå‘½ä»¤ç¯å¢ƒ
+	éªŒè¯å®‰è£…ok?
 		vue --version
-2. Éú³ÉÏîÄ¿Ä£°å
-	vue init <Ä£°åÃû> ±¾µØÎÄ¼ş¼ĞÃû³Æ
-3. ½øÈëµ½Éú³ÉÄ¿Â¼ÀïÃæ
+2. ç”Ÿæˆé¡¹ç›®æ¨¡æ¿
+	vue init <æ¨¡æ¿å> æœ¬åœ°æ–‡ä»¶å¤¹åç§°
+3. è¿›å…¥åˆ°ç”Ÿæˆç›®å½•é‡Œé¢
 	cd xxx
 	npm install
 4. npm run dev
