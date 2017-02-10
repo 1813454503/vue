@@ -79,6 +79,12 @@ Vue.component('aaa',Aaa);
 
 	*组件里面放数据:
 		data必须是函数的形式，函数必须返回一个对象(json)
+    *组件里面写事件
+        method:{
+            change(){
+
+            }
+        }
 2. 局部组件
 	放到某个组件内部
 var vm=new Vue({
@@ -92,10 +98,11 @@ var vm=new Vue({
 });
 --------------------------------------
 另一种编写方式:
+    全局组件
 	Vue.component('my-aaa',{
 		template:'<strong>好</strong>'
 	});
-
+    局部组件
 	var vm=new Vue({
 		el:'#box',
 		components:{
@@ -125,18 +132,21 @@ var vm=new Vue({
 	<component :is="组件名称"></component>
 --------------------------------------------
 vue-devtools	->  调试工具
-	https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+    安装：
+        1.github -> vue-devtools
+        2.点击Get it on the Chrome Web Store.
+    作用：
+        查看组件之间的关系
 --------------------------------------------
 vue默认情况下，子组件也没法访问父组件数据
-
 --------------------------------------------
 组件数据传递:	√
 1. 子组件就想获取父组件data
 	在调用子组件：
-		<bbb :m="数据"></bbb>
+		<bbb :m="数据" :my-msg="数据2"></bbb>
 
 	子组件之内:
-		props:['m','myMsg']
+		props:['m','myMsg']         //注意html里面的属性如果是带-的，那么js中的就用驼峰命名
 
 		props:{
 			'm':String,
