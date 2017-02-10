@@ -64,7 +64,7 @@
 		v-for="(val,index) in array"
 
 
-4. track-by="id"
+4. track-by="id"    （提升循环性能）
 	变成
 		<li v-for="(val,index) in list" :key="index">
 5. 自定义键盘指令
