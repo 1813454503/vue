@@ -114,8 +114,6 @@ mint-ui
 	Vue.component(Checklist.name, Checklist);
 
 http://mint-ui.github.io/docs/#!/zh-cn2
-
-论坛:
 	
 -------------------------------------------------------
 
