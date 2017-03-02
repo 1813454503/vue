@@ -1,43 +1,43 @@
-vueÎÊÌâ:
-	ÂÛÌ³
+ï»¿vueé—®é¢˜:
+	è®ºå›
 	http://bbs.zhinengshe.com
 ------------------------------------------------
-UI×é¼ş
-	±ğÈËÌá¹©ºÃÒ»¶Ñ¶«Î÷
+UIç»„ä»¶
+	åˆ«äººæä¾›å¥½ä¸€å †ä¸œè¥¿
 
-	Ä¿µÄ: 
-		ÎªÁËÌá¸ß¿ª·¢Ğ§ÂÊ
-		¹¦ÄÜ
+	ç›®çš„: 
+		ä¸ºäº†æé«˜å¼€å‘æ•ˆç‡
+		åŠŸèƒ½
 
-	Ô­Ôò: ÄÃ¹ıÀ´Ö±½ÓÊ¹ÓÃ
+	åŸåˆ™: æ‹¿è¿‡æ¥ç›´æ¥ä½¿ç”¨
 
 vue-cli  ->  vue-loader
 
 bootstrap:
-	twitter	¿ªÔ´
-	¼ò½à¡¢´ó·½
-	¹ÙÍøÎÄµµ
+	twitter	å¼€æº
+	ç®€æ´ã€å¤§æ–¹
+	å®˜ç½‘æ–‡æ¡£
 
-	»ùÓÚ jquery
+	åŸºäº jquery
 
-	Õ¤¸ñ»¯ÏµÍ³+ÏìÓ¦Ê½¹¤¾ß  (ÒÆ¶¯¶Ë¡¢pad¡¢pc)
-	°´Å¥
+	æ …æ ¼åŒ–ç³»ç»Ÿ+å“åº”å¼å·¥å…·  (ç§»åŠ¨ç«¯ã€padã€pc)
+	æŒ‰é’®
 --------------------------------
-bower	Ç°¶Ë°ü¹ÜÀíÆ÷	   jquery#1.11.1
-	×Ô¶¯½â¾öÒÀÀµ
-npm	node°ü¹ÜÀíÆ÷	  jquery@1.11.1
+bower	å‰ç«¯åŒ…ç®¡ç†å™¨	   jquery#1.11.1
+	è‡ªåŠ¨è§£å†³ä¾èµ–
+npm	nodeåŒ…ç®¡ç†å™¨	  jquery@1.11.1
 --------------------------------
 
-¶öÁËÃ´ÍÅ¶Ó¿ªÔ´Ò»¸ö»ùÓÚvue ×é¼ş¿â
+é¥¿äº†ä¹ˆå›¢é˜Ÿå¼€æºä¸€ä¸ªåŸºäºvue ç»„ä»¶åº“
 	elementUI	PC
-	MintUI		ÒÆ¶¯¶Ë
+	MintUI		ç§»åŠ¨ç«¯
 --------------------------------
 elementUI:
-	ÈçºÎÊ¹ÓÃ
+	å¦‚ä½•ä½¿ç”¨
 
-	¹ÙÍø:http://element.eleme.io/
-Ê¹ÓÃ:
-1. °²×° element-ui
+	å®˜ç½‘:http://element.eleme.io/
+ä½¿ç”¨:
+1. å®‰è£… element-ui
 	npm i element-ui -D
 
 	npm install element-ui --save-dev
@@ -45,75 +45,81 @@ elementUI:
 	//   i	->    install
 	//   D     ->    --save-dev
 	//   S	->    --save
-2. ÒıÈë   main.js	Èë¿ÚÎÄ¼ş
+2. å¼•å…¥   main.js	å…¥å£æ–‡ä»¶
 	import ElementUI from 'element-ui'
 	import 'element-ui/lib/theme-default/index.css'
 
-	È«²¿ÒıÈë
-3. Ê¹ÓÃ×é¼ş
+	å…¨éƒ¨å¼•å…¥
+3. ä½¿ç”¨ç»„ä»¶
 	Vue.use(ElementUI)
 
-	css-loader  	ÒıÈëcss
-	×ÖÌåÍ¼±ê	file-loader
+	css-loader  	å¼•å…¥css
+	å­—ä½“å›¾æ ‡	file-loader
 
 
 	less:
 		less
 		less-loader
 -------------------------------------------------
-°´Ğè¼ÓÔØÏàÓ¦×é¼ş:	¡Ì
-	¾ÍĞèÒª °´Å¥
+æŒ‰éœ€åŠ è½½ç›¸åº”ç»„ä»¶:	âˆš
+	å°±éœ€è¦ æŒ‰é’®
 1. babel-plugin-component
 	cnpm install babel-plugin-component -D
-2. .babelrcÎÄ¼şÀïÃæĞÂÔöÒ»¸öÅäÖÃ
+2. .babelrcæ–‡ä»¶é‡Œé¢æ–°å¢ä¸€ä¸ªé…ç½®
 	  "plugins": [["component", [
 	    {
 	      "libraryName": "element-ui",
 	      "styleLibraryName": "theme-default"
 	    }
 	  ]]]
-3. ÏëÓÃÄÄ¸ö×é¼ş¾ÍÓÃÄÄ¸ö
-	ÒıÈë:
+3. æƒ³ç”¨å“ªä¸ªç»„ä»¶å°±ç”¨å“ªä¸ª
+	å¼•å…¥:
 		import {Button,Radio} from 'element-ui'
-	Ê¹ÓÃ:
-		a). Vue.component(Button.name, Button);  ¸öÈË²»Ì«Ï²»¶
-		b). Vue.use(Button);   ¡Ì
+	ä½¿ç”¨:
+		a). Vue.component(Button.name, Button);  ä¸ªäººä¸å¤ªå–œæ¬¢
+		b). Vue.use(Button);   âˆš
 ---------------------------------------------------
-·¢ËÍÇëÇó:
-	vue-resourse		½»»¥
+äº¤äº’:
+	1.vue-resourse
+	2.axios
 
-	axios
+	åŒºåˆ«ï¼šaxiosä½¿ç”¨äº†æœ€æ–°çš„ajaxï¼Œç°åœ¨å¯ä»¥ç›´æ¥æ‹¿https://api.github.com/users/itstriveçš„æ•°æ®(githubçš„æ•°æ®éƒ½æ˜¯å¼€æ”¾)
+
+ç»™ç»„ä»¶ç»‘å®šåŸç”Ÿäº‹ä»¶
+    åœ¨æŸä¸ªç»„ä»¶çš„æ ¹å…ƒç´ ä¸Šç›‘å¬ä¸€ä¸ªåŸç”Ÿäº‹ä»¶ã€‚å¯ä»¥ä½¿ç”¨ .native ä¿®é¥° v-on
+    -->ç±»ä¼¼äº‹ä»¶å§”æ‰˜
+	 @click.native
 ---------------------------------------------------
 element-ui    ->  pc
 
 mint-ui
-	ÒÆ¶¯¶Ë ui¿â
+	ç§»åŠ¨ç«¯ uiåº“
 
 	http://mint-ui.github.io/
 
-1. ÏÂÔØ
+1. ä¸‹è½½
 	npm install mint-ui -S
 
 	-S
 	--save
-2. ÒıÈë
+2. å¼•å…¥
 	import Vue from 'vue';
 	import Mint from 'mint-ui';
 	import 'mint-ui/lib/style.css'
 	Vue.use(Mint);
 
-	°´ĞèÒıÈë:
+	æŒ‰éœ€å¼•å…¥:
 	import { Cell, Checklist } from 'minu-ui';
 	Vue.component(Cell.name, Cell);
 	Vue.component(Checklist.name, Checklist);
 
 http://mint-ui.github.io/docs/#!/zh-cn2
 
-ÂÛÌ³:
+è®ºå›:
 	
 -------------------------------------------------------
 
-Mint-ui-demo:  ¿´×ÅÊÖ²á×ßÁËÒ»±é
+Mint-ui-demo:  çœ‹ç€æ‰‹å†Œèµ°äº†ä¸€é
 
 https://github.com/itstrive/striveCode/tree/js/vue2.0-Mint-ui-demo
 
