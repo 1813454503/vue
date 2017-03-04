@@ -1,0 +1,19 @@
+vue仿手机新闻站:
+    1.拿到静态页面，直接用vue边布局，边写
+    2.假数据
+
+做项目基本流程：
+    1.规划组件结构
+        Nav.vue
+        Header.vue
+        ...
+    2.编写对应的路由
+        vue-router
+    3.具体每个组件的功能
+
+建议：一些公共的文件jquery，jquery插件，一般在index.html文件里面引入
+
+    main.js     require()/import
+
+
+
