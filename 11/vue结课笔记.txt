@@ -1,46 +1,46 @@
-vue:
-	Á½ÖÖ:
-		1. Ö±½ÓÒ³Ãæ¼¶¿ª·¢£¬scriptÖ±½ÓÒıÈëvue
-		2. ¹¤³ÌĞÔ¿ª·¢  , webpack+loader\  vue-cli
+ï»¿vue:
+	ä¸¤ç§:
+		1. ç›´æ¥é¡µé¢çº§å¼€å‘ï¼Œscriptç›´æ¥å¼•å…¥vue
+		2. å·¥ç¨‹æ€§å¼€å‘  , webpack+loader\  vue-cli
 ---------------------------------------
-webpack  ÅäÖÃ¶àÎÄ¼şÈë¿Ú
+webpack  é…ç½®å¤šæ–‡ä»¶å…¥å£
 -------------------------------------
 
-webpack ´ò°üÍêºÜ´ó?
+webpack æ‰“åŒ…å®Œå¾ˆå¤§?
 	bundle.js
 	build.js
 
-	a). webpack´úÂë²ğ·Ö: code-spliting
-	b). ÌáÈ¡¹«¹²(css,js)
-	c). Ô¤äÖÈ¾: prerender-spa-plugin
-	d). ºóÌ¨¡ª¡ª¿ªÆôÑ¹Ëõ£¬gz
-	e). Òì²½¼ÓÔØ×é¼ş
+	a). webpackä»£ç æ‹†åˆ†: code-spliting
+	b). æå–å…¬å…±(css,js)
+	c). é¢„æ¸²æŸ“: prerender-spa-plugin
+	d). åå°â€”â€”å¼€å¯å‹ç¼©ï¼Œgz
+	e). å¼‚æ­¥åŠ è½½ç»„ä»¶
 		require.ensure
 ----------------------------------
 vuex:
 -------------------------------------
-Vue  10ÔÂ1   ->  2.0±äµÄ¼òµ¥
+Vue  10æœˆ1   ->  2.0å˜çš„ç®€å•
 
 -------------------------------------
 vue
 -------------------------------------
-×é¼şÖ®¼äÍ¨ĞÅ:
-	vue1.0  ->  props ->  ×Ó×é¼ş¿ÉÒÔ¸ü¸Ä¸¸×é¼şÊı¾İ   .sync
+ç»„ä»¶ä¹‹é—´é€šä¿¡:
+	vue1.0  ->  props ->  å­ç»„ä»¶å¯ä»¥æ›´æ”¹çˆ¶ç»„ä»¶æ•°æ®   .sync
 
-	½â¾öÎÊÌâ:
+	è§£å†³é—®é¢˜:
 		0. props
-		1. $emit   µ¥Ò»ÊÂ¼ş¹ÜÀí	Store.js
+		1. $emit   å•ä¸€äº‹ä»¶ç®¡ç†	Store.js
 			var Event=new Vue()
 			export default Event
-		2. ¶ÔÏóÖ®¼äÒıÓÃ	¡Ì
-			msg:'welcome'  -> ×Ó¼¶
+		2. å¯¹è±¡ä¹‹é—´å¼•ç”¨	âˆš
+			msg:'welcome'  -> å­çº§
 
 			msg:{
 				title:'welcome'
 			}
 
 			msg.title
-		3. vuex  ¹ÜÀí×´Ì¬
+		3. vuex  ç®¡ç†çŠ¶æ€
 -------------------------------------	
 this.$el
 
@@ -64,11 +64,11 @@ main.js
 	})
 
 	new Vuex.Store()
-		->  ¹¹Ôìº¯Êı(Àà) Ê××ÖÄ¸´óĞ´
+		->  æ„é€ å‡½æ•°(ç±») é¦–å­—æ¯å¤§å†™
 
 vue init
 
-webpack2.0->  ¶Ë¿Ú 8080  8081  8082 8083....
+webpack2.0->  ç«¯å£ 8080  8081  8082 8083....
 
 module:{
 	loaders:[
@@ -82,9 +82,9 @@ module:{
 	]
 }
 -------------------------------------
-È«¼ÒÍ°
+å…¨å®¶æ¡¶
 -------------------------------------
-axios¡ª¡ª²»ÄÜuse
+axiosâ€”â€”ä¸èƒ½use
 
 Vue.prototype.$http=axios;
 
@@ -99,10 +99,10 @@ webpack
 
 this  -> new Vue()
 
-this ->  Ô­ÉújsDOM¶ÔÏó
+this ->  åŸç”ŸjsDOMå¯¹è±¡
 --------------------------------------
-vueÖĞÒıÈë°Ù¶ÈµØÍ¼?
-	1. <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ÄúµÄÃÜÔ¿">	->  ĞèÒªindex.html
+vueä¸­å¼•å…¥ç™¾åº¦åœ°å›¾?
+	1. <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=æ‚¨çš„å¯†é’¥">	->  éœ€è¦index.html
 	2. map.vue
 		template
 			<div id="div1" :style="style"></div>
@@ -126,7 +126,7 @@ vueÖĞÒıÈë°Ù¶ÈµØÍ¼?
 					var map = new BMap.Map("div1");
 					var point = new BMap.Point(this.longitude,this.latitude);
 					map.centerAndZoom(point, 12);
-					var marker = new BMap.Marker(point);// ´´½¨±ê×¢
+					var marker = new BMap.Marker(point);// åˆ›å»ºæ ‡æ³¨
 					map.addOverlay(marker);
 				}
 			}
@@ -145,12 +145,12 @@ vueÖĞÒıÈë°Ù¶ÈµØÍ¼?
 	}
 	--------------------------------
 vue:
-	Ö¸Áî
-	ÊôĞÔ
-	ÊÂ¼ş
-	Êı¾İ:
+	æŒ‡ä»¤
+	å±æ€§
+	äº‹ä»¶
+	æ•°æ®:
 		data,props/computed
-	ÉúÃüÖÜÆÚ
+	ç”Ÿå‘½å‘¨æœŸ
 --------------------------------------------
 http://bbs.zhinengshe.com
 --------------------------------------------
@@ -164,7 +164,7 @@ package.json
 
 node_modules   ->	rm -rf 
 
--g  ->  ÃüÁî»·¾³ÓÃ
+-g  ->  å‘½ä»¤ç¯å¢ƒç”¨
 	webpack
 
 

@@ -1,8 +1,12 @@
+使用别人的组件
+        Vue.use(...)
+
+        Vue.use(MintUI)
+        Vue.use(VueRouter)
 自定义vue全局组件
         使用：
             <loading></loading>
 
-        为什么能用vue.use(...)?
 -----------------------------------
 文件目录：
     |-loading/
