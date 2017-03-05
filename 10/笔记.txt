@@ -15,5 +15,12 @@ vue仿手机新闻站:
 
     main.js     require()/import
 
+项目需要的模块:
+    vuex
+    vue-router
+    axios
+-----------------------------------------------
+
+
 
 
