@@ -54,6 +54,8 @@ localhost:8080/home
 -----------------------------------------
 <router-link to="">
 -----------------------------------------
+常见问题解决：
+
 main.js
 	->const router=new VueRouter({})
 
@@ -70,13 +72,13 @@ vue init
 
 webpack2.0->  端口 8080  8081  8082 8083....
 
-module:{
+module:{        //1.x
 	loaders:[
 		{test:/\.css$/, loader:'style!css'}
 	]
 }
 
-module:{
+module:{        //2.x
 	rules:[
 		{test:/\.css$/, loader:'style-loader!css-loader'}
 	]
@@ -152,15 +154,11 @@ vue:
 		data,props/computed
 	生命周期
 --------------------------------------------
-http://bbs.zhinengshe.com
---------------------------------------------
 Vue2.0  ->  React
 
-json		diff
+虚拟DOM其实就是一个json	->   diff算法比较差异
 
 package.json
-	
-	cnpm install vue-resource -D
 
 node_modules   ->	rm -rf 
 
