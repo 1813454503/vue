@@ -23,3 +23,8 @@
     };
     
     export default Loading
+-----------------------------------
+使用：
+import Loading from './components/loading’（默认指到文件夹里的index.js）
+
+Vue.use(Loading)

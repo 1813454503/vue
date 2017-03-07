@@ -1,5 +1,5 @@
-﻿git page：
-	任何仓库 master分支，都可以发布(git page)
+﻿github pages：
+	任何仓库 master分支，都可以发布(github pages)
 -------------------------------------
 双向过滤器:
 	Vue.filter(name,{
