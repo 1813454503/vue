@@ -1,5 +1,5 @@
 import {normalTime} from './timeFormat';
 
-module.exports={
+export default{
 	normalTime
 };

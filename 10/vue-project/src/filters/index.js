@@ -2,6 +2,6 @@ import {
 	normalTime
 } from './normalTime'
 
-module.exports = {
+export default{
 	normalTime
 };
