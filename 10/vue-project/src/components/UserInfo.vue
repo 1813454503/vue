@@ -50,5 +50,5 @@
 </template>
 
 <style>
-	@import '../assets/css/mydoc.css'
+	@import '../assets/css/mydoc.css';
 </style>
