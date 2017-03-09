@@ -14,8 +14,6 @@
 	import NavHeader from './components/Nav.vue'
 	import FooterView from './components/Footer.vue'
 
-	import Home from './components/Home.vue'
-
 	import {mapGetters} from 'vuex'
 
 	export default{
@@ -53,7 +51,6 @@
 			}
 		},
 		components:{
-			Home,
 			NavHeader,
 			FooterView
 		}
